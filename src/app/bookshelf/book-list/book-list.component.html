@@ -1,9 +1,25 @@
-<div class="row mb-3">
+<div class="row mb-3" *ngFor="let book of myBooks">
+  <hr/>
+
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn btn-primary">Add New Book</button>
+    </div>
+  </div>
 
   <div class="col-md-12">
-    <app-book></app-book>
-    <app-book></app-book>
-    <app-book></app-book>
+    <a href="#" class="list-group item clearfix">
+
+      <div class="float-left">
+        <h4 class="list-group-item-heading">{{ book.title }}</h4>
+        <p class="list-group-item-text mb-0">{{ book.genre }}</p>
+      </div>
+
+      <div class="float-right">
+        <img class="img-responsive rounded" style="max-height: 50px" src="{{ book.coverImagePath }}" alt="{{ book.title }}">
+      </div>
+
+    </a>
   </div>
-  
+
 </div>
