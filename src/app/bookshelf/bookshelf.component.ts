@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Book } from '../shared/book/book.model';
 
 @Component({
   selector: 'app-bookshelf',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class BookshelfComponent {
 
+  selectedBook: Book;
+  
 }
