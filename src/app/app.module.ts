@@ -13,6 +13,7 @@ import { NavigationComponent } from './shared/navigation/navigation.component';
 import { BookComponent } from './shared/book/book.component';
 import { BookshelfHomeComponent } from './bookshelf/bookshelf-home/bookshelf-home.component';
 import { BookEditComponent } from './bookshelf/book-edit/book-edit.component';
+import { BookshelfEditorComponent } from './bookshelf/bookshelf-editor/bookshelf-editor.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BookEditComponent } from './bookshelf/book-edit/book-edit.component';
     NavigationComponent,
     BookComponent,
     BookshelfHomeComponent,
-    BookEditComponent
+    BookEditComponent,
+    BookshelfEditorComponent
   ],
   imports: [
     BrowserModule,
