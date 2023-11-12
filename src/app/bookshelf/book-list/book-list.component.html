@@ -1,7 +1,8 @@
 <div class="row mb-3">
 
-  <div class="col-md-12">
-    <app-book *ngFor="let book of myBooks" [book]="bookEl" (bookSelected)="handleBookSelected(bookEl)"></app-book>
+  <div class="col-md-12" *ngFor="let bookElement of myBooks; let i =index">
+    <app-book [book]="bookElement"></app-book>
+    <button class="float-right" style="border: none; font-size: 16px" (click)="onRemoveBook(i)">&minus;</button>
   <!-- <a href="#" class="list-group item clearfix">
 
 
